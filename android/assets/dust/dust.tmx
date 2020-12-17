@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="48" height="48" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="1">
+ <properties>
+  <property name="atlas" value="dust packfile"/>
+  <property name="blended tiles" value=""/>
+ </properties>
+ <tileset firstgid="1" name="dust" tilewidth="32" tileheight="32" tilecount="0" columns="0">
+  <image source="dust.bmp" width="256" height="320"/>
+ </tileset>
+ <layer id="1" name="Sand" width="48" height="48">
+  <data encoding="base64" compression="zlib">
+   eJztmEkKgDAMRbsVnO5/WnEhSGlD08H+xL94CGpp5iZdQgiLcVYAGbRsADIQQkgta/R82DLvyRj7W2X/uf5nxX+la9DsVCM3kWnNHwkpZmb0rscHOpMx3LFked65Y+6YuD8pQxtjrCUY5Pwg+UeTjwj9zwha9WpZr8m12I+9aqmXntKLHhZBsH2tDF+fX+fEvRF5189Zd170Ax4WfGJBxhRx3yHVzlwuos+iCGdSL7zMzSh1PWXPPfGt1+z0YDUmrcrtTQcJhLNIe7/spa5dzjtSTQ==
+  </data>
+ </layer>
+ <layer id="2" name="Roads" width="48" height="48">
+  <data encoding="base64" compression="zlib">
+   eJztmNEOwiAMRfsjujl1vmiiJur//5kjkWQjhY1SRpk9yX3ZwzgpHQMAFEVRFIWf85A7klpQ/7LU7m+5OXE5IZFEyH835IBkzzT2I5Cl+PxNf2HuNpdEd4j09LG2P7XOPkL9k8ufk635X3/Pc/YPJ1vzt/yT/ydivDW/3wZw9zZhvNA/i7Kmzu0feiRYvZfOgc+POi9z/iFehPHW7J8cLuo/xbf+53KR4P8Evv1XKhT/N9Ttb5HoH0Mt/r3nuQT/FNS/LCn+Eu5jqP7mXqYbhes+JhaKvzlXdEg47mNikeQfc4ay1Oxve5jSuw1M3VvCO1xi/N0aUmo3Ps+VwNTwCDy1K0Wp2imKdL5ThjLh
+  </data>
+ </layer>
+ <layer id="3" name="Markers" width="48" height="48">
+  <data encoding="base64" compression="zlib">
+   eJztziEBAAAIAzBqQf9gFEDgbrYEqwIAAAAAAADga9IBojodADgsqjIAdA==
+  </data>
+ </layer>
+ <layer id="4" name="Plants" width="48" height="48">
+  <data encoding="base64" compression="zlib">
+   eJzt1kEOhSAMRVG2gbr/df44MEGDpkLRV/89EycGX7FUUwIAAABwZn47QIee7Ep1T8b7lqEp2intpZXXXmandVrcraHWZxHfHeqsc6S8d0m6c8Uqev4W0c9tPlwB6Is+d77gzne+Vzmfn3yulzX/2rMe/whb/XPa70Vtba+9yifrexv1jKfy/xulOWztdaXMpTLXVa+q9/HIfOq1W0SuoZZd9TwBb/kBgQwE7w==
+  </data>
+ </layer>
+ <layer id="5" name="Walls" width="48" height="48">
+  <data encoding="base64" compression="zlib">
+   eJztmFFuwzAIhq12m3aBdj3N9rC9pbn/dZaHRmIIw4+hdtL1l5AaEsMXh2Cnh1LKYee2Vz35x+rJP1b/mX8LfS/K/7nYV+X8BIyPKsr/vdhP5fwe+DNyj6rDDP6oEH7tvnmNeOaoJ78nHup/NP6LIw+NUYstPfvWmvDO//lmliK1mcGvrR8S/0mIkcU/K+NqObT1g/OfiNEYFr9WS1RefktZ9UN/Hw2mLP7M+r8X/z37Z0v9oPE0HxXST++xNmbxo7lG8mv9E80VqR8pv4ef9s+zYJa876+W32Kt5bYMGYPyzwaTlz+q6PyjfpR1KvZ3G4/rrX/tufGxmi9DNY6j4PPERHwZ2hp/Vv1w/g92/F65bo3Z6vOqlf9NYcjon+i61lo/r4u9JLDWxmrfBVJcLrT+e+w9rOuj/Mi+1MODaP0G67V/yx4b4Z/L332ENLZlb2PlpYrOv3YPU8H6+Ej+DGXk7cV/vZmVYwv8fO2R2Gs5evFfmFF51h7Nx/9rW0XfK42/hyH31MI/SpRF6nG8r22ZH73+Efj3bL/i6RRc
+  </data>
+ </layer>
+</map>

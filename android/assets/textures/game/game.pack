@@ -1,0 +1,208 @@
+
+game.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+blast
+  rotate: false
+  xy: 1, 27
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+ak47
+  rotate: false
+  xy: 67, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+blood
+  rotate: false
+  xy: 101, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+ct1
+  rotate: false
+  xy: 135, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+ct2
+  rotate: false
+  xy: 169, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+ct3
+  rotate: false
+  xy: 203, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+ct4
+  rotate: false
+  xy: 237, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h1
+  rotate: false
+  xy: 271, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h2
+  rotate: false
+  xy: 305, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h3
+  rotate: false
+  xy: 339, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h4
+  rotate: false
+  xy: 373, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h5
+  rotate: false
+  xy: 407, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h6
+  rotate: false
+  xy: 441, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h7
+  rotate: false
+  xy: 475, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+h8
+  rotate: false
+  xy: 509, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+legs
+  rotate: false
+  xy: 543, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 1
+legs
+  rotate: false
+  xy: 543, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 5
+legs
+  rotate: false
+  xy: 577, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 2
+legs
+  rotate: false
+  xy: 611, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 3
+legs
+  rotate: false
+  xy: 645, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 4
+legs
+  rotate: false
+  xy: 679, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 6
+legs
+  rotate: false
+  xy: 713, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 7
+legs
+  rotate: false
+  xy: 747, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 8
+m4a1
+  rotate: false
+  xy: 781, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+t1
+  rotate: false
+  xy: 815, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+t2
+  rotate: false
+  xy: 849, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+t3
+  rotate: false
+  xy: 883, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+t4
+  rotate: false
+  xy: 917, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+pointer
+  rotate: false
+  xy: 1, 1
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1

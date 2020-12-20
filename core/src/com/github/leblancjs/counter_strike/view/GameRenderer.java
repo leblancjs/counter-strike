@@ -106,7 +106,8 @@ public class GameRenderer {
         ppuX = (float) this.width / CAMERA_WIDTH;
         ppuY = (float) this.height / CAMERA_HEIGHT;
 
-        camera = new OrthographicCamera(CAMERA_WIDTH * ppuX, CAMERA_HEIGHT * ppuY);
+        camera = new OrthographicCamera();
+        camera.setToOrtho(false, CAMERA_WIDTH * ppuX, CAMERA_HEIGHT * ppuY);
         camera.position.set(0.5f * width, 0.5f * height, 0);
         camera.update();
 
@@ -195,7 +196,7 @@ public class GameRenderer {
         ppuX = (float) this.width / CAMERA_WIDTH;
         ppuY = (float) this.height / CAMERA_HEIGHT;
 
-        mapRenderer = new OrthogonalTiledMapRenderer(map, 1f / 32f);
+        mapRenderer = new OrthogonalTiledMapRenderer(map, 1f);
         mapRenderer.setView(camera);
     }
 
@@ -282,7 +283,7 @@ public class GameRenderer {
      */
     private void initMap() {
         map = world.getMap();
-        mapRenderer = new OrthogonalTiledMapRenderer(map, 1f / 32f);
+        mapRenderer = new OrthogonalTiledMapRenderer(map);
         mapRenderer.setView(camera);
     }
 
@@ -290,6 +291,7 @@ public class GameRenderer {
      * Draws the map's tile layers.
      */
     private void drawMap() {
+        mapRenderer.setView(camera);
         mapRenderer.render();
     }
 

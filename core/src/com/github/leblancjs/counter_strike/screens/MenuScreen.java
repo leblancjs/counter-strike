@@ -203,8 +203,7 @@ public class MenuScreen implements Screen {
      * Resizes the view-port of the stage and re-positions the actors
      */
     private void resizeStage() {
-        Viewport viewport = new StretchViewport(width, height);
-        stage.setViewport(viewport);
+        stage.getViewport().update(width, height);
 
         // Reposition the actors
         imageTitle.setPosition((0.5f * width) - (0.5f * imageTitle.getWidth()), 0.7f * height);

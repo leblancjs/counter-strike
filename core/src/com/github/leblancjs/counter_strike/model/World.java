@@ -284,7 +284,7 @@ public class World {
      * @return the converted Y coordinate
      */
     public float convertY(float y) {
-        return (getMapHeight() - 1) - y;
+        return y; //(getMapHeight() - 1) - y;
     }
 
     /* Spawning */

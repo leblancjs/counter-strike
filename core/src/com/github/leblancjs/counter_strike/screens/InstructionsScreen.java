@@ -159,11 +159,7 @@ public class InstructionsScreen implements Screen {
      * Resizes the view-port of the stage and re-positions the actors
      */
     private void resizeStage() {
-        Viewport viewport = new ScreenViewport();
-        viewport.setScreenWidth(width);
-        viewport.setScreenHeight(height);
-
-        stage.setViewport(viewport);
+        stage.getViewport().update(width, height);
 
         // Resize the label
         labelInstructions.setWidth(width - PADDING * width);

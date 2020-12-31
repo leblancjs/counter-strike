@@ -4,10 +4,8 @@ package com.github.leblancjs.counter_strike.model;
 import java.util.HashMap;
 import java.util.Random;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.maps.tiled.AtlasTmxMapLoader;
 import com.badlogic.gdx.maps.tiled.TiledMap;
-import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
@@ -98,15 +96,15 @@ public class World {
         // Spawn Points
         hostageSpawnPoints = new Array<Vector2>();
 
-        hostageSpawnPoints.add(new Vector2(28f, convertY(39f)));
-        hostageSpawnPoints.add(new Vector2(28f, convertY(40f)));
-        hostageSpawnPoints.add(new Vector2(28f, convertY(41f)));
+        hostageSpawnPoints.add(new Vector2(28f, convertYForInitialization(39f)));
+        hostageSpawnPoints.add(new Vector2(28f, convertYForInitialization(40f)));
+        hostageSpawnPoints.add(new Vector2(28f, convertYForInitialization(41f)));
 
-        ctSpawn = new Rectangle(39f, convertY(43f), 5f, 5f);
-        tSpawn = new Rectangle(7f, convertY(39f), 5f, 5f);
+        ctSpawn = new Rectangle(39f, convertYForInitialization(43f), 5f, 5f);
+        tSpawn = new Rectangle(7f, convertYForInitialization(39f), 5f, 5f);
 
         // Rescue Zone
-        rescueZonePoint = new Vector2(39f, convertY(43f));
+        rescueZonePoint = new Vector2(39f, convertYForInitialization(43f));
         rescueZone = new Rectangle(rescueZonePoint.x, rescueZonePoint.y, RESCUE_ZONE_SIZE, RESCUE_ZONE_SIZE);
 
         // Paths
@@ -115,24 +113,24 @@ public class World {
 
         Array<Vector2> path = new Array<Vector2>();
 
-        path.add(new Vector2(7f, convertY(26f)));
-        path.add(new Vector2(16f, convertY(23f)));
-        path.add(new Vector2(22f, convertY(10f)));
-        path.add(new Vector2(28f, convertY(19f)));
-        path.add(new Vector2(32f, convertY(28f)));
-        path.add(new Vector2(41f, convertY(30f)));
-        path.add(new Vector2(37f, convertY(39f)));
+        path.add(new Vector2(7f, convertYForInitialization(26f)));
+        path.add(new Vector2(16f, convertYForInitialization(23f)));
+        path.add(new Vector2(22f, convertYForInitialization(10f)));
+        path.add(new Vector2(28f, convertYForInitialization(19f)));
+        path.add(new Vector2(32f, convertYForInitialization(28f)));
+        path.add(new Vector2(41f, convertYForInitialization(30f)));
+        path.add(new Vector2(37f, convertYForInitialization(39f)));
 
         terroristPaths.add(path);
 
         path = new Array<Vector2>();
 
-        path.add(new Vector2(7f, convertY(26f)));
-        path.add(new Vector2(10f, convertY(14f)));
-        path.add(new Vector2(22f, convertY(10f)));
-        path.add(new Vector2(28f, convertY(19f)));
-        path.add(new Vector2(41f, convertY(22f)));
-        path.add(new Vector2(43f, convertY(43f)));
+        path.add(new Vector2(7f, convertYForInitialization(26f)));
+        path.add(new Vector2(10f, convertYForInitialization(14f)));
+        path.add(new Vector2(22f, convertYForInitialization(10f)));
+        path.add(new Vector2(28f, convertYForInitialization(19f)));
+        path.add(new Vector2(41f, convertYForInitialization(22f)));
+        path.add(new Vector2(43f, convertYForInitialization(43f)));
 
         terroristPaths.add(path);
 
@@ -140,14 +138,14 @@ public class World {
         // Terrorist
         campingSpots = new Array<Vector2>();
 
-        campingSpots.add(new Vector2(14f, convertY(32f)));
-        campingSpots.add(new Vector2(26f, convertY(41f)));
-        campingSpots.add(new Vector2(15f, convertY(26f)));
-        campingSpots.add(new Vector2(18f, convertY(19f)));
-        campingSpots.add(new Vector2(6f, convertY(16f)));
-        campingSpots.add(new Vector2(43f, convertY(43f)));
-        campingSpots.add(new Vector2(38f, convertY(43f)));
-        campingSpots.add(new Vector2(37f, convertY(34f)));
+        campingSpots.add(new Vector2(14f, convertYForInitialization(32f)));
+        campingSpots.add(new Vector2(26f, convertYForInitialization(41f)));
+        campingSpots.add(new Vector2(15f, convertYForInitialization(26f)));
+        campingSpots.add(new Vector2(18f, convertYForInitialization(19f)));
+        campingSpots.add(new Vector2(6f, convertYForInitialization(16f)));
+        campingSpots.add(new Vector2(43f, convertYForInitialization(43f)));
+        campingSpots.add(new Vector2(38f, convertYForInitialization(43f)));
+        campingSpots.add(new Vector2(37f, convertYForInitialization(34f)));
 
         campingAngles = new Array<Float>();
 
@@ -287,6 +285,16 @@ public class World {
         return y; //(getMapHeight() - 1) - y;
     }
 
+    /**
+     * Converts the Y coordinate from the Tiled format to the LibGDX format.
+     *
+     * @param y : the Y coordinate to convert
+     * @return the converted Y coordinate
+     */
+    public float convertYForInitialization(float y) {
+        return (getMapHeight() - 1) - y;
+    }
+
     /* Spawning */
 
     /**
@@ -326,6 +334,9 @@ public class World {
             default:
                 break;
         }
+
+        upperBoundX -= 1;
+        upperBoundY -= 1;
 
         if (actor == null) {
             return;
